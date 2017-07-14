@@ -1,0 +1,10 @@
+.DS_Store
+.git
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+prepros.cfg
+*.swp
