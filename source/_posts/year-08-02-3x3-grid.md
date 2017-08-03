@@ -98,7 +98,6 @@ div, body {
 此时我们只要选中这种情况下的第二个元素，给它加一个足以把第三个元素挤到第二排的margin即可，因此代码为：
 
 ```CSS
-.pic-list-item:first-child:nth-last-child(4):nth-child(2),
 .pic-list-item:first-child:nth-last-child(4) ~ .pic-list-item:nth-child(2) {
   margin-right: 33%;
 }
@@ -107,7 +106,6 @@ div, body {
 如果，你使用Scss，那就更简单了：
 
 ```SCSS
-.pic-list-item:first-child:nth-last-child(4),
 .pic-list-item:first-child:nth-last-child(4) ~ .pic-list-item {
   &:nth-child(2) {
     margin-right: 33%;
@@ -163,7 +161,6 @@ div, body {
   box-sizing: border-box;
   border: 1.5px solid transparent;
 }
-.pic-list-item:first-child:nth-last-child(4):nth-child(2),
 .pic-list-item:first-child:nth-last-child(4) ~ .pic-list-item:nth-child(2) {
   margin-right: 33%;
 }
