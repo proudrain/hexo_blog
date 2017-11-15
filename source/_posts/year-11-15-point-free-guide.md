@@ -64,7 +64,7 @@ flip f = \y x -> f x y
    这种函数，我们可以用一个帮助函数例如
    `bool f t b = if b then t else f`
    替换为
-   `\x -> bool (x == 1) (-1) 0`
+   `\x -> bool (-1) 0 (x == 1)`
 
 
 # 举个栗子
