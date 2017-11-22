@@ -23,7 +23,7 @@ var customSearch;
   };
 	
 	$(function() {
-		$('#footer, #main').addClass('loaded');
+		$('#footer, #main, #stat').addClass('loaded');
 		$('#site-nav-switch').on('click', toggleMenu);
 		$(document).on('click', closeMenu);
 		$('#site-menu').on('click', function (e) {
