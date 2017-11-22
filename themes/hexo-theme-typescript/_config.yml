@@ -41,14 +41,14 @@ less:
 social:
 - slug: github
   url: https://github.com/lovin0730
+- slug: rss
+  url: /atom.xml
 - slug: twitter
   url: https://twitter.com/xy610888871
 # - slug: facebook
 #   url: https://www.facebook.com/mironeXiao
 # - slug: email
 #   url: mailto:i@artifact.me
-# - slug: feed
-#   url: /atom.xml
 # - slug: google
 #   url: https://plus.google.com/+ArtChenOtakism/posts
 # - slug: linkedin
