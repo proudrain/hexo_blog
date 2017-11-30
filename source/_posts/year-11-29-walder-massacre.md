@@ -1,5 +1,5 @@
 ---
-title: walder惨案
+title: Walder惨案
 date: 2017-11-29 19:22:55
 tags:
   - Haskell
@@ -8,7 +8,7 @@ tags:
 ![cover](http://oanr6klwj.bkt.clouddn.com/blog/walder-massacre.jpg)
 > [*pixiv-ID: 56376665*](https://www.pixiv.net/member_illust.php?mode=medium&illust_id=56376665)
 
-伟大的将monad带入haskell的Philip walder曾说过一句名言：
+伟大的将monad带入haskell的Philip Walder曾说过一句名言：
 
 > Monad说白了不过就是自函子范畴上的一个幺半群而已，这有什么难理解的？
 
