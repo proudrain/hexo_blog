@@ -48,7 +48,7 @@ tags:
 * 将每个对象`X ∈ C`映射至一对象`F(X) ∈ D`上
 * 将每个态射`f: X -> Y ∈ C`映射至一态射`F(f): F(X) -> F(Y) ∈ D`上
 
-# 自函子(Enfunctor)
+# 自函子(Endofunctor)
 
 自函子是一种特殊的函子，他的源范畴和目标范畴一样。也就是它映射到自身。
 
@@ -75,7 +75,7 @@ tags:
 
 好了让我们重新回味一下文章开头那句话，把它简单转换一下，得到两个信息：
 
-* Monad是functor组成的群，所以对于任何一个Monad，存在`A -> M A`，`(A -> B) -> M A -> M B`
+* Monad是functor，所以对于任何一个Monad，存在`A -> M A`，`(A -> B) -> M A -> M B`
 
 * 对于任意一个Monad，满足`Id ⊗ f = f = f ⊗ Id`和`(f ⊗ g) ⊗ h = f ⊗ (g ⊗ h)` 
 
