@@ -76,7 +76,7 @@ data Zero
 data Succ n
 data Nat = Zero | Succ Nat
 data Vec a n where
-  Nil  :: Vec a Ze
+  Nil  :: Vec a Zero
   Cons :: a -> Vec a n -> Vec a (Succ n)
 -- example
 vecOne :: Vec Nat (Succ Zero)
@@ -127,10 +127,10 @@ vecIndex (Succ n) (VCons _ xs) = vecIndex n xs
 现在让我们把注意力集中到`vecIndex :: Nat -> Vec x b -> x`这里，既然我们已经用函数来表示出了类型，那么其实只要约束`Nat`小于 `b`就好了，这时我们需要[TypeFamilies](https://wiki.haskell.org/GHC/Type_families)扩展来让类型可以重载，这样我们就可以为类型定义一些二元运算了（要支持运算符的话还要添加一个[TypeOperators](https://downloads.haskell.org/~ghc/7.8.3/docs/html/users_guide/data-type-extensions.html)扩展）：
 
 ```haskell
-type family ((a :: Nat) :< (b :: Nat)) :: Bool
-type instance m :< 'Zero = 'False
-type instance 'Zero :< 'Succ n = 'True
-type instance ('Succ m) :< ('Succ n) = m :< n
+type family (a :: Nat) :< (b :: Nat) where
+  m         :< 'Zero     = 'False
+  'Zero     :< 'Succ n   = 'True
+  ('Succ m) :< ('Succ n) = m :< n
 ```
 现在还有一个问题，`Nat`和`b`是不能够比较的，因此我们需要创造一个能够比较的版本：
 
