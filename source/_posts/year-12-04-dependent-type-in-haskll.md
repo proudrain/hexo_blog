@@ -158,3 +158,6 @@ vecIndex (SSucc $ SSucc SZero) vecTwo --报错
 现在你可以试试这道题目来自己体会一下了：
 
 [codewars-Singletons](https://www.codewars.com/kata/54750ed320c64c64e20002e2)
+
+相关paper：
+[Dependently Typed Programming with Singletons](https://cs.brynmawr.edu/~rae/papers/2012/singletons/paper.pdf)
