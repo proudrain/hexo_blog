@@ -1,5 +1,5 @@
 ---
-title: Walder惨案
+title: Wadler惨案
 date: 2017-11-29 19:22:55
 tags:
   - Haskell
@@ -8,11 +8,11 @@ tags:
 ![cover](http://oanr6klwj.bkt.clouddn.com/blog/walder-massacre.jpg)
 > [*pixiv-ID: 56376665*](https://www.pixiv.net/member_illust.php?mode=medium&illust_id=56376665)
 
-伟大的将monad带入haskell的Philip Walder曾说过一句名言：
+伟大的将monad带入haskell的Philip Wadler曾说过一句名言：
 
 > Monad说白了不过就是自函子范畴上的一个幺半群而已，这有什么难理解的？
 
-于是我决定认真理解一下这句话，于是两天时间被谋杀了，史称walder惨案（雾）...但是也算是有一些收获。
+于是我决定认真理解一下这句话，于是两天时间被谋杀了，史称wadler惨案（雾）...但是也算是有一些收获。
 
 本文只讨论monad的定义，对monad的用途意义等话题不做涉及。
 
